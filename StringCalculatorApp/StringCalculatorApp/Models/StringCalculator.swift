@@ -9,7 +9,7 @@ import Foundation
 
 enum StringCalculatorError: LocalizedError {
     case negativeNumbersNotAllowed([Int])
-
+    
     var errorDescription: String? {
         switch self {
         case .negativeNumbersNotAllowed(let negatives):
@@ -17,6 +17,7 @@ enum StringCalculatorError: LocalizedError {
         }
     }
 }
+
 
 
 public class StringCalculator {
@@ -49,8 +50,7 @@ public class StringCalculator {
         let negatives = intValues.filter { $0 < 0 }
         if !negatives.isEmpty {
             throw StringCalculatorError.negativeNumbersNotAllowed(negatives)
-        }
-
+        }        
         return intValues.reduce(0, +)
     }
 }
