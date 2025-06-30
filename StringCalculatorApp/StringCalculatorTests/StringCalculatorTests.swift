@@ -38,5 +38,12 @@ final class StringCalculatorTests: XCTestCase {
         let result = try? calculator.add("1\n2,3")
         XCTAssertEqual(result, 6)
     }
+    
+    func test_customDelimiter_isHandledCorrectly() {
+        let calculator = StringCalculator()
+        let result = try? calculator.add("//;\n1;2")
+        XCTAssertEqual(result, 3)
+    }
+
 }
 
