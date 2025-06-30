@@ -6,8 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		1635AEC52E12C724006F4279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1635AEA72E12C5E7006F4279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1635AEAE2E12C5E7006F4279;
+			remoteInfo = StringCalculatorApp;
+		};
+		1635AED22E12C92D006F4279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1635AEA72E12C5E7006F4279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1635AEAE2E12C5E7006F4279;
+			remoteInfo = StringCalculatorApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1635AEAF2E12C5E7006F4279 /* StringCalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1635AEC12E12C724006F4279 /* StringCalculatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1635AECE2E12C92D006F4279 /* StringCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +35,29 @@
 			path = StringCalculatorApp;
 			sourceTree = "<group>";
 		};
+		1635AECF2E12C92D006F4279 /* StringCalculatorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StringCalculatorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1635AEAC2E12C5E7006F4279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1635AEBE2E12C724006F4279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1635AECB2E12C92D006F4279 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				1635AEB12E12C5E7006F4279 /* StringCalculatorApp */,
+				1635AECF2E12C92D006F4279 /* StringCalculatorTests */,
 				1635AEB02E12C5E7006F4279 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				1635AEAF2E12C5E7006F4279 /* StringCalculatorApp.app */,
+				1635AEC12E12C724006F4279 /* StringCalculatorAppTests.xctest */,
+				1635AECE2E12C92D006F4279 /* StringCalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +111,49 @@
 			productReference = 1635AEAF2E12C5E7006F4279 /* StringCalculatorApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1635AEC02E12C724006F4279 /* StringCalculatorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1635AEC72E12C724006F4279 /* Build configuration list for PBXNativeTarget "StringCalculatorAppTests" */;
+			buildPhases = (
+				1635AEBD2E12C724006F4279 /* Sources */,
+				1635AEBE2E12C724006F4279 /* Frameworks */,
+				1635AEBF2E12C724006F4279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1635AEC62E12C724006F4279 /* PBXTargetDependency */,
+			);
+			name = StringCalculatorAppTests;
+			packageProductDependencies = (
+			);
+			productName = StringCalculatorAppTests;
+			productReference = 1635AEC12E12C724006F4279 /* StringCalculatorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1635AECD2E12C92D006F4279 /* StringCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1635AED42E12C92D006F4279 /* Build configuration list for PBXNativeTarget "StringCalculatorTests" */;
+			buildPhases = (
+				1635AECA2E12C92D006F4279 /* Sources */,
+				1635AECB2E12C92D006F4279 /* Frameworks */,
+				1635AECC2E12C92D006F4279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1635AED32E12C92D006F4279 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1635AECF2E12C92D006F4279 /* StringCalculatorTests */,
+			);
+			name = StringCalculatorTests;
+			packageProductDependencies = (
+			);
+			productName = StringCalculatorTests;
+			productReference = 1635AECE2E12C92D006F4279 /* StringCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +166,14 @@
 				TargetAttributes = {
 					1635AEAE2E12C5E7006F4279 = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					1635AEC02E12C724006F4279 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 1635AEAE2E12C5E7006F4279;
+					};
+					1635AECD2E12C92D006F4279 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 1635AEAE2E12C5E7006F4279;
 					};
 				};
 			};
@@ -100,12 +192,28 @@
 			projectRoot = "";
 			targets = (
 				1635AEAE2E12C5E7006F4279 /* StringCalculatorApp */,
+				1635AEC02E12C724006F4279 /* StringCalculatorAppTests */,
+				1635AECD2E12C92D006F4279 /* StringCalculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1635AEAD2E12C5E7006F4279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1635AEBF2E12C724006F4279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1635AECC2E12C92D006F4279 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +230,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1635AEBD2E12C724006F4279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1635AECA2E12C92D006F4279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1635AEC62E12C724006F4279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1635AEAE2E12C5E7006F4279 /* StringCalculatorApp */;
+			targetProxy = 1635AEC52E12C724006F4279 /* PBXContainerItemProxy */;
+		};
+		1635AED32E12C92D006F4279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1635AEAE2E12C5E7006F4279 /* StringCalculatorApp */;
+			targetProxy = 1635AED22E12C92D006F4279 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1635AEB82E12C5EA006F4279 /* Debug */ = {
@@ -302,6 +437,78 @@
 			};
 			name = Release;
 		};
+		1635AEC82E12C724006F4279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5G6924AVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mriganka.StringCalculatorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringCalculatorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StringCalculatorApp";
+			};
+			name = Debug;
+		};
+		1635AEC92E12C724006F4279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5G6924AVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mriganka.StringCalculatorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringCalculatorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StringCalculatorApp";
+			};
+			name = Release;
+		};
+		1635AED52E12C92D006F4279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5G6924AVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mriganka.StringCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringCalculatorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StringCalculatorApp";
+			};
+			name = Debug;
+		};
+		1635AED62E12C92D006F4279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5G6924AVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mriganka.StringCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringCalculatorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StringCalculatorApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +526,24 @@
 			buildConfigurations = (
 				1635AEBB2E12C5EA006F4279 /* Debug */,
 				1635AEBC2E12C5EA006F4279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1635AEC72E12C724006F4279 /* Build configuration list for PBXNativeTarget "StringCalculatorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1635AEC82E12C724006F4279 /* Debug */,
+				1635AEC92E12C724006F4279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1635AED42E12C92D006F4279 /* Build configuration list for PBXNativeTarget "StringCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1635AED52E12C92D006F4279 /* Debug */,
+				1635AED62E12C92D006F4279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
