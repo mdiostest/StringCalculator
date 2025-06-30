@@ -26,5 +26,11 @@ final class StringCalculatorTests: XCTestCase {
         let result = try? calculator.add("1,2")
         XCTAssertEqual(result, 3)
     }
+    
+    func test_multipleNumbers_returnsTheirSum() {
+        let calculator = StringCalculator()
+        let result = try? calculator.add("1,2,3,4")
+        XCTAssertEqual(result, 10)
+    }
 }
 
