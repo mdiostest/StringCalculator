@@ -14,10 +14,27 @@ public class StringCalculator {
         if numbers.isEmpty {
             return 0
         }
-        let delimiters = CharacterSet(charactersIn: ",\n")
-        let components = numbers.components(separatedBy: delimiters)
-        let intValues = components.compactMap { Int($0) }
+
+        var delimiterSet = CharacterSet(charactersIn: ",\n")
+        var numbersPart = numbers
+
+        // Check for custom delimiter
+        if numbers.hasPrefix("//") {
+            let components = numbers.components(separatedBy: "\n")
+            if components.count > 1 {
+                let delimiterLine = components[0]
+                numbersPart = components.dropFirst().joined(separator: "\n")
+
+                if let customDelimiter = delimiterLine.dropFirst(2).first {
+                    delimiterSet.insert(charactersIn: String(customDelimiter))
+                }
+            }
+        }
+
+        let tokens = numbersPart.components(separatedBy: delimiterSet)
+        let intValues = tokens.compactMap { Int($0) }
         return intValues.reduce(0, +)
     }
 }
+
 
