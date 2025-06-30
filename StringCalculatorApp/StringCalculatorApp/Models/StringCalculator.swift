@@ -14,9 +14,10 @@ public class StringCalculator {
         if numbers.isEmpty {
             return 0
         }
-
-        let components = numbers.components(separatedBy: ",")
+        let delimiters = CharacterSet(charactersIn: ",\n")
+        let components = numbers.components(separatedBy: delimiters)
         let intValues = components.compactMap { Int($0) }
         return intValues.reduce(0, +)
     }
 }
+
