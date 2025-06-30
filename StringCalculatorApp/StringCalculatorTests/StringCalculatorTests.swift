@@ -20,5 +20,11 @@ final class StringCalculatorTests: XCTestCase {
         let result = try? calculator.add("1")
         XCTAssertEqual(result, 1)
     }
+    
+    func test_twoNumbers_returnsTheirSum() {
+        let calculator = StringCalculator()
+        let result = try? calculator.add("1,2")
+        XCTAssertEqual(result, 3)
+    }
 }
 
