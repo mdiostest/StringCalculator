@@ -15,6 +15,8 @@ public class StringCalculator {
             return 0
         }
 
-        return Int(numbers) ?? 0
+        let components = numbers.components(separatedBy: ",")
+        let intValues = components.compactMap { Int($0) }
+        return intValues.reduce(0, +)
     }
 }
