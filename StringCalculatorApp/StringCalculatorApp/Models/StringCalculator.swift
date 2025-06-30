@@ -7,8 +7,14 @@
 
 import Foundation
 
-class StringCalculator {
-    func add(_ numbers: String) throws -> Int {
-        return 0
+public class StringCalculator {
+    public init() {}
+
+    public func add(_ numbers: String) throws -> Int {
+        if numbers.isEmpty {
+            return 0
+        }
+
+        return Int(numbers) ?? 0
     }
 }

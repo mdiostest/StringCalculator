@@ -14,11 +14,11 @@ final class StringCalculatorTests: XCTestCase {
         let result = try? calculator.add("")
         XCTAssertEqual(result, 0)
     }
-    
+
     func test_singleNumber_returnsThatNumber() {
         let calculator = StringCalculator()
         let result = try? calculator.add("1")
         XCTAssertEqual(result, 1)
     }
-
 }
+
